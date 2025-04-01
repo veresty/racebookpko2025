@@ -43,7 +43,7 @@
 
     <!-- 🎯 CEL -->
     <section id="cel" class="bg-white dark:bg-gray-800 rounded-xl shadow p-4">
-      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-2">🎯 Cel i prognoza wyniku</h2>
+      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-2 cursor-pointer select-none">🎯 Cel i prognoza wyniku</h2>
       <p>Celem startu w PKO Półmaratonie Gdynia 26 kwietnia jest uzyskanie czasu <strong>1:35:00</strong>, co przekłada się na średnie tempo <strong>4:30 min/km</strong>.</p>
       <p class="mt-2">Na podstawie ostatnich wyników:</p>
       <ul class="list-disc list-inside mb-2">
@@ -55,7 +55,7 @@
 
     <!-- 👟 BUTY -->
     <section id="buty" class="bg-white dark:bg-gray-800 rounded-xl shadow p-4">
-      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-2">👟 Dobór butów</h2>
+      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-2 cursor-pointer select-none">👟 Dobór butów</h2>
       <p><strong>ASICS Novablast 5</strong> wybrane jako najlepsza opcja – dobra amortyzacja, komfort, wsparcie przy masie 89–90 kg.</p>
       <ul class="list-disc list-inside mt-2">
         <li>Bezpieczniejsze dla stawów</li>
@@ -66,7 +66,7 @@
 
     <!-- 📊 STRATEGIA -->
     <section id="strategia" class="bg-white dark:bg-gray-800 rounded-xl shadow p-4">
-      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-2">📊 Strategia tempa – taktyka na bieg</h2>
+      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-2 cursor-pointer select-none">📊 Strategia tempa – taktyka na bieg</h2>
       <p><strong>Skoro celem jest 1:35:00, czyli tempo 4:30/km</strong> – bez pacemakerów kluczowe będzie samodzielne trzymanie tempa i dobre zarządzanie siłami.</p>
 
       <h3 class="font-semibold mt-4">🎯 Taktyka: Negative split light</h3>
@@ -95,7 +95,7 @@
     </section>
     <!-- 📅 PIĄTEK – ŻYWIENIE -->
     <section id="piatek" class="bg-white dark:bg-gray-800 rounded-xl shadow p-4">
-      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-2">📅 Piątek – rozszerzony plan żywienia z gramaturą i makro</h2>
+      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-2 cursor-pointer select-none">📅 Piątek – rozszerzony plan żywienia z gramaturą i makro</h2>
       <ul class="list-disc list-inside space-y-3">
         <li><strong>Śniadanie (~8:30):</strong><br>
           - 3 bułki pszenne (240 g), 40 g masła orzechowego, 1 banan, 300 ml izotoniku<br>
@@ -123,7 +123,7 @@
 
     <!-- 🔥 ROZGRZEWKA -->
     <section id="rozgrzewka" class="bg-white dark:bg-gray-800 rounded-xl shadow p-4">
-      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-2">🔥 Rozgrzewka przed startem</h2>
+      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-2 cursor-pointer select-none">🔥 Rozgrzewka przed startem</h2>
       <p>Start o godzinie <strong>20:00</strong> wymaga przemyślanej rozgrzewki. Dobrze przeprowadzona pomoże Ci wystartować płynnie bez uczucia „betonowych nóg”.</p>
 
       <h3 class="font-semibold mt-4">Plan rozgrzewki (30–40 minut przed startem):</h3>
@@ -143,7 +143,7 @@
 
     <!-- ☕️ KOFEINA I ŻELE -->
     <section id="kofeina" class="bg-white dark:bg-gray-800 rounded-xl shadow p-4">
-      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-2">☕️ Kofeina i żele</h2>
+      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-2 cursor-pointer select-none">☕️ Kofeina i żele</h2>
       <ul class="list-disc list-inside space-y-2">
         <li><strong>Żel z kofeiną:</strong> 20–25 minut przed startem (50–75 mg kofeiny) – dla pobudzenia i koncentracji</li>
         <li><strong>Na trasie:</strong> żel zwykły ok. 45. minuty biegu</li>
@@ -153,48 +153,119 @@
     </section>
     <!-- ✅ CHECKLISTA STARTOWA -->
     <section id="checklista" class="bg-white dark:bg-gray-800 rounded-xl shadow p-4">
-      <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-3">✅ Sobotnia checklista startowa (wieczorny bieg)</h2>
+  <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-3 cursor-pointer select-none">✅ Sobotnia checklista startowa (wieczorny bieg)</h2>
 
-      <div class="flex gap-3 mb-4">
-        <button id="select-all" class="bg-primary text-white px-3 py-1 rounded hover:bg-blue-700 text-sm">✅ Zaznacz wszystko</button>
-        <button id="clear-all" class="bg-gray-400 text-white px-3 py-1 rounded hover:bg-gray-600 text-sm">🧹 Wyczyść wszystko</button>
-      </div>
+  <div class="flex gap-3 mb-4">
+    <button id="select-all" class="bg-primary text-white px-3 py-1 rounded hover:bg-blue-700 text-sm">✅ Zaznacz wszystko</button>
+    <button id="clear-all" class="bg-gray-400 text-white px-3 py-1 rounded hover:bg-gray-600 text-sm">🧹 Wyczyść wszystko</button>
+  </div>
 
-      <ul id="checklist-items" class="space-y-2 text-sm">
-        <li><label class="flex items-start gap-2"><input type="checkbox" class="check-item accent-blue-600 mt-1"><span>🕗 <strong>08:00</strong> – Lekkie śniadanie (~100 g węgli): bułki, banan, izotonik</span></label></li>
-        <li><label class="flex items-start gap-2"><input type="checkbox" class="check-item accent-blue-600 mt-1"><span>🕛 <strong>12:30</strong> – Lunch: lekki, wysokowęglowodanowy (np. ryż z musem)</span></label></li>
-        <li><label class="flex items-start gap-2"><input type="checkbox" class="check-item accent-blue-600 mt-1"><span>🕓 <strong>15:45</strong> – Ostatni konkretny posiłek: łatwostrawny, bez błonnika</span></label></li>
-        <li><label class="flex items-start gap-2"><input type="checkbox" class="check-item accent-blue-600 mt-1"><span>🕕 <strong>16:30–18:00</strong> – Odpoczynek, rolowanie pleców i klatki</span></label></li>
-        <li><label class="flex items-start gap-2"><input type="checkbox" class="check-item accent-blue-600 mt-1"><span>🕡 <strong>18:30</strong> – No-spa + Espumisan + żel z kofeiną</span></label></li>
-        <li><label class="flex items-start gap-2"><input type="checkbox" class="check-item accent-blue-600 mt-1"><span>🕢 <strong>18:45–19:15</strong> – Rozgrzewka: trucht + mobilizacja + przebieżki</span></label></li>
-        <li><label class="flex items-start gap-2"><input type="checkbox" class="check-item accent-blue-600 mt-1"><span>🕤 <strong>19:30</strong> – Ostatni łyk izotoniku</span></label></li>
-        <li><label class="flex items-start gap-2"><input type="checkbox" class="check-item accent-blue-600 mt-1"><span>🕗 <strong>20:00</strong> – START – tempo 4:30/km, realizuj plan!</span></label></li>
-      </ul>
+  <ul id="checklist-items" class="space-y-2 text-sm">
+    <li>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="check-item accent-blue-600 mt-1">
+        <span>
+          🕗 <strong>08:00</strong> – Lekkie śniadanie (~100 g węgli): bułki, banan, izotonik<br>
+          <em>• 2 bułki pszenne (160 g), 1 banan (120 g), 20 g miodu, 300 ml izotoniku<br>
+          • Węgle: ~100 g, Białko: ~10 g, Tłuszcz: ~6 g, Kalorie: ~600–650 kcal</em>
+        </span>
+      </label>
+    </li>
 
-      <style>
-        #checklist-items li {
-          transition: background-color 0.3s ease, transform 0.2s ease;
-          padding: 6px;
-          border-radius: 6px;
-        }
-        #checklist-items input[type="checkbox"]:checked + span {
-          text-decoration: line-through;
-          color: #888;
-        }
-        #checklist-items input[type="checkbox"]:checked ~ span {
-          animation: pulse 0.2s ease;
-        }
+    <li>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="check-item accent-blue-600 mt-1">
+        <span>
+          🕛 <strong>12:30</strong> – Lunch: lekki, wysokowęglowodanowy (np. ryż z musem)<br>
+          <em>• 100 g ryżu jaśminowego (suchego), 150 g musu jabłkowego, 250 ml soku jabłkowego<br>
+          • Węgle: ~110 g, Białko: ~6 g, Tłuszcz: ~2 g, Kalorie: ~550–600 kcal</em>
+        </span>
+      </label>
+    </li>
 
-        @keyframes pulse {
-          0% { transform: scale(1); background-color: #e0f7ff; }
-          50% { transform: scale(1.02); background-color: #ccf0ff; }
-          100% { transform: scale(1); background-color: transparent; }
-        }
-      </style>
-    </section>
+    <li>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="check-item accent-blue-600 mt-1">
+        <span>
+          🕓 <strong>15:45</strong> – Ostatni konkretny posiłek: łatwostrawny, bez błonnika<br>
+          <em>• 4 wafle ryżowe (40 g), 1 banan (120 g), 15 g miodu, 200 ml izotoniku<br>
+          • Węgle: ~85 g, Białko: ~3 g, Tłuszcz: ~1–2 g, Kalorie: ~400–450 kcal</em>
+        </span>
+      </label>
+    </li>
+
+    <li>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="check-item accent-blue-600 mt-1">
+        <span>🕕 <strong>16:30–18:00</strong> – Odpoczynek, rolowanie pleców i klatki</span>
+      </label>
+    </li>
+
+<li>
+  <label class="flex items-start gap-2">
+    <input type="checkbox" class="check-item accent-blue-600 mt-1">
+    <span>🕠 <strong>18:00</strong> – Lekka przekąska pre-startowa (opcjonalnie)<br>
+      <em>• 1 banan <u>lub</u> 1/2–1 baton energetyczny (carb-only)<br>
+      • Alternatywnie: żel bez kofeiny ok. 30 minut przed startem<br>
+      • Cel: utrzymanie poziomu glukozy bez obciążania żołądka</em>
+    </span>
+  </label>
+</li>
+
+    <li>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="check-item accent-blue-600 mt-1">
+        <span>🕡 <strong>18:30</strong> – No-spa + Espumisan + żel z kofeiną</span>
+      </label>
+    </li>
+
+    <li>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="check-item accent-blue-600 mt-1">
+        <span>🕢 <strong>18:45–19:15</strong> – Rozgrzewka: trucht + mobilizacja + przebieżki</span>
+      </label>
+    </li>
+
+    <li>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="check-item accent-blue-600 mt-1">
+        <span>🕤 <strong>19:30</strong> – Ostatni łyk izotoniku</span>
+      </label>
+    </li>
+
+    <li>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="check-item accent-blue-600 mt-1">
+        <span>🕗 <strong>20:00</strong> – START – tempo 4:30/km, realizuj plan!</span>
+      </label>
+    </li>
+  </ul>
+
+  <style>
+    #checklist-items li {
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      padding: 6px;
+      border-radius: 6px;
+    }
+    #checklist-items input[type="checkbox"]:checked + span {
+      text-decoration: line-through;
+      color: #888;
+    }
+    #checklist-items input[type="checkbox"]:checked ~ span {
+      animation: pulse 0.2s ease;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); background-color: #e0f7ff; }
+      50% { transform: scale(1.02); background-color: #ccf0ff; }
+      100% { transform: scale(1); background-color: transparent; }
+    }
+  </style>
+</section>
+
 <!-- ⚙️ TECHNICZNA CHECKLISTA -->
 <section id="checklista-techniczna" class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 mt-6">
-  <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-3">⚙️ Techniczna checklista przed startem</h2>
+  <h2 class="text-xl font-semibold text-primary dark:text-blue-300 mb-3 cursor-pointer select-none">⚙️ Techniczna checklista przed startem</h2>
 
   <div class="flex gap-3 mb-4">
     <button id="tech-select-all" class="bg-primary text-white px-3 py-1 rounded hover:bg-blue-700 text-sm">✅ Zaznacz wszystko</button>
@@ -390,7 +461,3 @@
 </body>
 </html>
 
-<!DOCTYPE html>
-<html lang="pl" class="dark">
-... (full HTML from user pasted here) ...
-</html>
